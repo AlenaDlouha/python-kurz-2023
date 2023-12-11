@@ -34,7 +34,7 @@ data = {
 }
 
 
-# Vytvoření slovníku pro Pass/Fail hodnocení
+
 prospech = {}
 for jmeno, body in data.items():
     if body >= 60:
@@ -42,7 +42,6 @@ for jmeno, body in data.items():
     else:
         prospech[jmeno] = "Fail"
 
-# Uložení do JSON souboru
 with open("prospech.json", mode="w", encoding="utf-8") as soubor:
     json.dump(prospech, soubor)
 
