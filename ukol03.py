@@ -34,6 +34,7 @@ data = {
 }
 
 
+
 prospech = {}
 for jmeno, body in data.items():
     if body >= 60:
