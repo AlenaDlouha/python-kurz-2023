@@ -1,6 +1,4 @@
-import json
-
-data = {
+{
     "Dušan Kadlec": 32,
     "Daniel Svoboda": 100,
     "Anežka Benešová": 17,
@@ -32,19 +30,3 @@ data = {
     "Dalibor Kadlec": 8,
     "Robert Pospíšil": 36
 }
-
-
-prospech = {}
-for jmeno, body in data.items():
-    if body >= 60:
-        prospech[jmeno] = "Pass"
-    else:
-        prospech[jmeno] = "Fail"
-
-with open("prospech.json", mode="w", encoding="utf-8") as soubor:
-    json.dump(prospech, soubor)
-
-with open("prospech.json", mode="r", encoding="utf-8") as soubor:
-    prospech = json.load(soubor)
-
-print(prospech)

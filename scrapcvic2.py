@@ -1,0 +1,1 @@
+#kurzy = response.html.find(".styles_menu__SHkwc a")
